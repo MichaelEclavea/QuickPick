@@ -10,7 +10,7 @@ function HowToPlay() {
       <Card className="how-cards" border="primary">
         <Card.Header as="h3" id="match-h3">MATCH4</Card.Header>
         <Card.Body>
-          <Card.Title>How to Play</Card.Title>
+          <Card.Title style={{ fontWeight: 'bold' }}>How to Play</Card.Title>
           <Card.Header>If you do not input any specified numbers, MyQuickPick will choose a random number from 1 to 24.</Card.Header>
           <Card.Text></Card.Text>
           <Card.Text >
@@ -25,7 +25,7 @@ function HowToPlay() {
       <Card className="how-cards" border="info">
         <Card.Header as="h3" id="pick-h3">PICK3</Card.Header>
         <Card.Body>
-          <Card.Title>How to Play</Card.Title>
+          <Card.Title style={{ fontWeight: 'bold' }}>How to Play</Card.Title>
           <Card.Header>If you do not input any specified numbers, MyQuickPick will choose a random number from 0 to 9.</Card.Header>
           <Card.Text></Card.Text>
           <Card.Text>
@@ -40,7 +40,7 @@ function HowToPlay() {
       <Card className="how-cards" border="warning">
         <Card.Header as="h3" id="keno-h3">KENO</Card.Header>
         <Card.Body>
-          <Card.Title>How to Play</Card.Title>
+          <Card.Title style={{ fontWeight: 'bold' }}>How to Play</Card.Title>
           <Card.Header>If you do not input any specified numbers, MyQuickPick will choose a random number from 1 to 80.</Card.Header>
           <Card.Text></Card.Text>
           <Card.Text>
@@ -54,7 +54,7 @@ function HowToPlay() {
       <Card className="how-cards" border="danger">
         <Card.Header as="h3" id="hit-h3">HIT5</Card.Header>
         <Card.Body>
-          <Card.Title>How to Play</Card.Title>
+          <Card.Title style={{ fontWeight: 'bold' }}>How to Play</Card.Title>
           <Card.Header>If you do not input any specified numbers, MyQuickPick will choose a random number from 1 to 42.</Card.Header>
           <Card.Text></Card.Text>
           <Card.Text>
