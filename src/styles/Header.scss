@@ -40,8 +40,8 @@
     text-decoration: none;
     display: block;
     padding-bottom: 4px;
-    height: auto;
-    overflow: none;
+    min-height: max-content;
+    height: 43px;
 }
 
 .main-link{
