@@ -4,23 +4,19 @@
  
  html{
    min-width: 100%;
-   /* min-height: max-content; */
    height: 100%;
  }
+ 
  body{
    color: #056676;
    font-family: sans-serif;
-
    margin: auto;
    height: 100%;
    width: 100%;
    text-align: center;
  }
  
- 
- 
  main{
-
    max-width: 100%;
    background-image: url('./images/mansion.jpg');
    background-repeat: repeat;
@@ -31,17 +27,6 @@
    min-height: 100%;
    text-align: center;
  }
- 
- /* #home-container {
-   color: black;
-   background-color: white;
-   width: 600px;
-   border-radius: 10px;
-   margin: auto;
-   margin-top: 100px;
- } */
- 
-
  
  button:hover{
    color: #e3fbec;
@@ -54,3 +39,10 @@
    margin-top: 50px;
  }
  
+ button{
+  width: 60px;
+  height: 44px;
+  margin: 10px 5px 10px 5px;
+  text-align: center;
+  justify-content: center;
+}

@@ -73,17 +73,22 @@ a.main-link{
     margin: 0;
     border-radius: 4px;
     border: 1px solid #056676;
-    color: black;
+    color: white;
     padding: 5px 7px;
     display: block;
+    background: linear-gradient(to top right, #b3b3b3 0%, #5c5b5b 62%);
+   
 }
 
 .component-link:hover{
     // color: #e3fbec;
-    color: white;
-    background-color: rgb(92, 91, 91);
-    box-shadow: 0px 0px 8px rgb(115, 161, 175);
+    // color: white;
+    // background-color: #5c5b5b;
+    
+    color: lightblue;
+    box-shadow: 0px 0px 8px rgb(97, 106, 109);
     font-size: 19.8px;
+    text-decoration: none;
 }
 
 #date{
