@@ -29,20 +29,28 @@
  }
  
  button:hover{
-   color: #e3fbec;
+   color: white;
    background-color: rgb(92, 91, 91);
    transform: scale(1.1);
-   box-shadow: 0px 0px 8px rgb(115, 161, 175);
+   /* box-shadow: 0px 0px 8px rgb(115, 161, 175); */
  }
  
  .all-sections{
    margin-top: 50px;
  }
  
- button{
+ /* button{
   width: 60px;
   height: 44px;
   margin: 10px 5px 10px 5px;
   text-align: center;
   justify-content: center;
+} */
+
+button{
+  min-width: 65px;
+  height: 44px;
+  border-radius: 7px;
+  margin: 10px 5px 10px 5px;
+  
 }

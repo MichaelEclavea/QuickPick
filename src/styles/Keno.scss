@@ -59,12 +59,12 @@ input::-webkit-inner-spin-button {
   }
 
 
-button{
-    width: 60px;
-    height: 44px;
-    border-radius: 7px;
-    margin: 10px 5px 10px 5px;
-}
+// button{
+//     width: 60px;
+//     height: 44px;
+//     border-radius: 7px;
+//     margin: 10px 5px 10px 5px;
+// }
 
 ol{
     padding: 0;
@@ -83,13 +83,4 @@ ol > .answer-list{
     font-size: 2em;
     background-color: #f2f6f5;
     opacity: 70%;
-}
-
-#top-bottom{
-    height: 200px;
-}
-
-#topButton{
-    padding: 25px;
-    margin: 50px;
 }

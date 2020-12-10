@@ -70,7 +70,7 @@ function Header (){
             {/* <li>
             <h4>Games:</h4>
             </li> */}
-            <h4>Games:</h4>
+   
             <li>
               <Link onClick={setColor} name="match4" to="/match4" className="component-link">MATCH4</Link>
             </li>
