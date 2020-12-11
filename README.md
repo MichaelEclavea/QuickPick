@@ -1,3 +1,12 @@
+# MyQuickPick (Lotto Number Generator) 
+
+I have created this application to allow users to insert their own personal numbers and generate numbers based off of the users input. 
+If the user decides they do not want to enter each input field, then the generator will produce random numbers based off the input numbers and the remaining output numbers will still be given, but the remaining numbers will be outputed but not based on anything. 
+The user can also just run the generator and the numbers will be generated randomly without any based reference. 
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
