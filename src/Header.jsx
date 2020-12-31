@@ -55,21 +55,37 @@ function Header (){
     }
 
         return(
-            <header style={{ backgroundColor: headerColor, color: textColor }}>
-          <div id='main-links'>
+            <header style={{ backgroundColor: headerColor, color: textColor, margin: 'auto'}}>
+            <div id='main-links' style={{ display: 'block'}}>
+
+            <section style={{ display: 'inline-block', textAlign: 'center'}}>
              <Link to="/" className="main-link"><i  onClick={setColor} name="home" id="icon" className="fas fa-home" title="Home"></i></Link> 
-            <a href=""><i  onClick={openTab} id="icon" className="fab fa-github" title="GitHub"></i></a>
+             <p>Home</p>
+             </section>
+
+            <section style={{ display: 'inline-block', textAlign: 'center', alignContent: 'center'}}>
+            <i onClick={openTab} id="icon" className="fab fa-github" title="GitHub" style={{ textAlign: 'center'}}></i>
+            <p>GitHub</p>
+            </section>
+
+            <section style={{ display: 'inline-block', textAlign: 'center'}}>
             <a href="mailto:mikesOwn671@gmail.com"><i  onClick={openTab} id="icon" className="far fa-paper-plane" title="Email"></i></a>
-            <a href=""><img onClick={openTab} id="clover" src="./images/clover.png" alt="" title="Washington Lottery" /></a> 
+            <p>Email</p>
+            </section>
+
+            <section style={{ display: 'inline-block', textAlign: 'center'}}>
+            <i class="fas fa-mountain" onClick={openTab} id="icon" title="Washington Lottery"></i>
+            <p>WA-Lotto</p>
+            </section>
+
             </div>
+            <div style={{ display: 'block'}}>
             <h1 id="main-title">MyQuickPick</h1>
             <h2  id="choose">Lottery Number Generator</h2>
             <h2 id="date">{date} {seconds} (PST)</h2>
+            </div>
          <nav>
           <ul id='component-links'>
-            {/* <li>
-            <h4>Games:</h4>
-            </li> */}
    
             <li>
               <Link onClick={setColor} name="match4" to="/match4" className="component-link">MATCH4</Link>
