@@ -18,7 +18,7 @@ function HowToPlay() {
             Example (input = 10) return a number from 6 thru 14.
             To view official washington lottery game rules and how to win MATCH4 click the view button.
           </Card.Text>
-          <Card.Link href="https://www.walottery.com/JackpotGames/Match4.aspx" style={{ color: 'blue', width: 'auto' }}><button>View</button></Card.Link>
+          <Card.Link href="https://www.walottery.com/JackpotGames/Match4.aspx" ><button style={{ width: 'auto', minWidth: '75px'}}>View</button></Card.Link>
         </Card.Body>
       </Card>
 
@@ -33,7 +33,7 @@ function HowToPlay() {
             Example (input = 5) return a number from 3 thru 8. If number is greater than 9, it will loop back over starting from 0.
             To view official washington lottery game rules and how to win PICK3 click the view button.
           </Card.Text>
-          <Card.Link href="https://www.walottery.com/JackpotGames/Pick3.aspx" style={{ color: 'blue', width: 'auto' }}><button>View</button></Card.Link>
+          <Card.Link href="https://www.walottery.com/JackpotGames/Pick3.aspx"><button style={{ width: 'auto', minWidth: '75px'}}>View</button></Card.Link>
         </Card.Body>
       </Card>
 
@@ -47,7 +47,7 @@ function HowToPlay() {
             This application will take the number you input and return a random number from -2 to +3. 
             Example (input = 10) return a number from 8 thru 13. To view official washington lottery game rules and how to win KENO click the view button.
           </Card.Text>
-          <Card.Link href="https://www.walottery.com/JackpotGames/DailyKeno.aspx" style={{ color: 'blue', width: 'auto' }}><button>View</button></Card.Link>
+          <Card.Link href="https://www.walottery.com/JackpotGames/DailyKeno.aspx" ><button style={{ width: 'auto', minWidth: '75px'}}>View</button></Card.Link>
         </Card.Body>
       </Card>
 
@@ -61,7 +61,7 @@ function HowToPlay() {
             This application will take the number you input and return a random number from -6 to +7. 
             Example (input = 10) return a number from 4 thru 17. To view official washington lottery game rules and how to win HIT5 click the view button.
           </Card.Text>
-          <Card.Link href="https://www.walottery.com/JackpotGames/Hit5.aspx" style={{ color: 'blue', width: 'auto' }}><button>View</button></Card.Link>
+          <Card.Link href="https://www.walottery.com/JackpotGames/Hit5.aspx"><button style={{ width: 'auto', minWidth: '75px'}}>View</button></Card.Link>
         </Card.Body>
       </Card>
       <br></br>
