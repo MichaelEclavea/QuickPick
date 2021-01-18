@@ -6,9 +6,8 @@ import Header from './Header';
 import Pick from './Pick';
 import Match from './Match';
 import Hit from './Hit';
-import HowToPlay from './HowToPlay';
-import Compare from './Compare';
 import './styles/App.scss';
+import HowToPlay from './HowToPlay';
 
 function App() {
 
@@ -19,10 +18,9 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/pick3" component={Pick} />
         <Route path="/match4" component={Match} />
-        <Route path="/compare" component={Compare}/>
         <Route path="/hit5" component={Hit} />
         <Route path="/keno" component={Keno} />
-        <Route path="/howtoplay" component={HowToPlay} />
+        <Route path="/custom" component={HowToPlay} />
       </div>
     </Router>
   )
