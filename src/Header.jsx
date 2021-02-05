@@ -1,4 +1,7 @@
 import React, {useEffect, useState} from 'react';
+import Navbar from 'react-bootstrap/Navbar'
+import Button from 'react-bootstrap/Button';
+import Nav from 'react-bootstrap/Nav'
 import { Link } from 'react-router-dom';
 import './styles/Header.scss';
 
@@ -56,54 +59,44 @@ function Header (){
 
         return(
             <header style={{ backgroundColor: headerColor, color: textColor, margin: 'auto'}}>
-            <div id='main-links' style={{ display: 'block'}}>
-
-            <section style={{ display: 'inline-block', textAlign: 'center'}}>
-             <Link to="/" className="main-link"><i  onClick={setColor} name="home" id="icon" className="fas fa-home" title="Home"></i></Link> 
-             <p>Home</p>
-             </section>
-
-            <section style={{ display: 'inline-block', textAlign: 'center', alignContent: 'center'}}>
-            <i onClick={openTab} id="icon" className="fab fa-github" title="GitHub" style={{ textAlign: 'center'}}></i>
-            <p>GitHub</p>
-            </section>
-
-            <section style={{ display: 'inline-block', textAlign: 'center'}}>
-            <a href="mailto:mikesOwn671@gmail.com"><i  onClick={openTab} id="icon" className="far fa-paper-plane" title="Email"></i></a>
-            <p>Email</p>
-            </section>
-
-            <section style={{ display: 'inline-block', textAlign: 'center'}}>
-            <i class="fas fa-mountain" onClick={openTab} id="icon" title="Washington Lottery"></i>
-            <p>WA-Lotto</p>
-            </section>
+            
+            <div id='main-links' style={{ marginBottom: '40px'}}>
+            <Navbar className="colorNav" variant="dark">
+            <Navbar.Brand href="/" onClick={setColor} name="home">Home</Navbar.Brand>
+            <Nav className="mr-auto">
+            {/* <Nav.Link href="/home">Home</Nav.Link> */}
+            <Nav.Link title="GitHub" onClick={openTab} style={{marginLeft: '15px'}}>GitHub</Nav.Link>
+            <Nav.Link href="mailto:mikesOwn671@gmail.com" onClick={openTab} title="Email" style={{marginLeft: '15px'}}>Email</Nav.Link>
+            <Nav.Link onClick={openTab} title="Washington Lottery" style={{marginLeft: '15px'}}>WA Lottery</Nav.Link>
+            </Nav>
+            </Navbar>
 
             </div>
             <div style={{ display: 'block'}}>
             <h1 id="main-title">MyQuickPick</h1>
-            <h2  id="choose">Lottery Number Generator</h2>
-            <h2 id="date">{date} {seconds} (PST)</h2>
+            <h2 id="choose">Lottery Number Generator</h2>
+            <h3 id="date">{date} {seconds} (PST)</h3>
             </div>
          <nav>
           <ul id='component-links'>
    
             <li>
-              <Link onClick={setColor} name="match4" to="/match4" className="component-link">MATCH4</Link>
+              <Link to="/match4"><button onClick={setColor} name="match4" className="component-link">MATCH4</button></Link>
             </li>
             <li>
-                <Link onClick={setColor} name="keno" to="/keno" className="component-link">KENO</Link>
+                <Link to="/keno"><button onClick={setColor} name="keno" className="component-link">KENO</button></Link>
             </li>
             <li>
-              <Link onClick={setColor} name="pick3" to="/pick3" className="component-link" >PICK3</Link>
+              <Link to="/pick3"><button onClick={setColor} name="pick3" className="component-link">PICK3</button></Link>
             </li>
             <li>
-              <Link onClick={setColor} name="hit5" to="/hit5" className="component-link">HIT5</Link>
+              <Link to="/hit5"><button onClick={setColor} name="hit5" className="component-link">HIT5</button></Link>
             </li>
-            <li>
+            {/* <li>
               <Link onClick={setColor} name="compare" to="/compare"  className="component-link">Compare</Link>
-            </li>
+            </li> */}
             <li>
-              <Link onClick={setColor} name="howtoplay" to="/howtoplay"  className="component-link">How To Play</Link>
+              <Link onClick={setColor} name="howtoplay" to="/howtoplay"><button  className="component-link">HOW TO PLAY</button></Link>
             </li>
           </ul>
         </nav>

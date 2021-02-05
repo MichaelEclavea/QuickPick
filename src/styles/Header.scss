@@ -1,16 +1,5 @@
-
-#icon{
-    text-align: center;
-    justify-content: center;
-    font-size: 1.8em;
-    margin-top: 10px;
-    color: #041e22;
-}
-
-#icon:hover{
-    transform: scale(1.2);
-    color: #08869a;
-    cursor: pointer;
+.colorNav {
+    background: #2d343293;
 }
 
 section{
@@ -20,8 +9,8 @@ section{
 
 #main-title{
     display: block;
-    font-size: 5em;
-    font-weight: bolder;
+    font-size: 3em;
+    font-weight: 800;
     font-family: sans-serif;
     margin: 0;
     margin-bottom: 5px;
@@ -57,22 +46,29 @@ ul#component-links{
 }
 
 .component-link{
-    margin: 0;
-    border-radius: 4px;
-    border: 1px solid #056676;
-    color: white;
-    padding: 5px 7px;
-    display: block;
-    background: linear-gradient(to top left, #293537b1 0%, #484747 62%);
-}
+    color: rgb(11, 10, 10);
+    box-shadow: 0px 2px 5px 2px rgb(80, 79, 79);
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #cfd5d7;
+    padding: 5px 10px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    }
 
 .component-link:hover{
+    background: #484848;
     color: white;
-    // font-size: 19.9px;
-    transform: scale(1.2);
-    background: linear-gradient(to top left, #151818b1 0%, #414141 62%);
+    // letter-spacing: 1px;
+    transform: scale(1.1);
     text-decoration: none;
-    display: inline-block;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 0px 2px 5px 2px rgba(34, 34, 34, 0.57);
+    transition: all 0.4s ease 0s;
+    
 }
 
 #date{
@@ -84,14 +80,16 @@ ul#component-links{
 }
 
 #choose{
-    font-size: 2.2em;
+    font-size: 2em;
     margin-bottom: 5px;
     text-align: center;
     font-weight: bold;
+    // color: rgb(232, 232, 232);
 }
 
 
 h3{
+    font-size: 1em;
     color: black;
 
 }
