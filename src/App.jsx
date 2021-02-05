@@ -6,13 +6,8 @@ import Header from './Header';
 import Pick from './Pick';
 import Match from './Match';
 import Hit from './Hit';
-<<<<<<< HEAD
 import HowToPlay from './HowToPlay';
-
-=======
->>>>>>> 353ab951ddb19d7a45e55ebee463275d97a6945d
 import './styles/App.scss';
-import HowToPlay from './HowToPlay';
 
 function App() {
 
