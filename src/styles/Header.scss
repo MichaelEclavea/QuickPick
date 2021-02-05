@@ -7,6 +7,8 @@ section{
     margin: auto 10px auto 10px;
 }
 
+
+
 #main-title{
     display: block;
     font-size: 3em;
@@ -46,6 +48,7 @@ ul#component-links{
 }
 
 .component-link{
+<<<<<<< HEAD
     color: rgb(11, 10, 10);
     box-shadow: 0px 2px 5px 2px rgb(80, 79, 79);
     text-transform: uppercase;
@@ -57,6 +60,17 @@ ul#component-links{
     border: none;
     transition: all 0.4s ease 0s;
     }
+=======
+    margin: 0;
+    border-radius: 4px;
+    border: 1px solid #056676;
+    color: white;
+    padding: 5px 7px;
+    display: block;
+    background: linear-gradient(to top left, #293537b1 0%, #777777 62%);
+   
+}
+>>>>>>> 353ab951ddb19d7a45e55ebee463275d97a6945d
 
 .component-link:hover{
     background: #484848;

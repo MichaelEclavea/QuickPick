@@ -92,11 +92,16 @@ function Header (){
             <li>
               <Link to="/hit5"><button onClick={setColor} name="hit5" className="component-link">HIT5</button></Link>
             </li>
+<<<<<<< HEAD
             {/* <li>
               <Link onClick={setColor} name="compare" to="/compare"  className="component-link">Compare</Link>
             </li> */}
             <li>
               <Link onClick={setColor} name="howtoplay" to="/howtoplay"><button  className="component-link">HOW TO PLAY</button></Link>
+=======
+            <li>
+              <Link onClick={setColor} name="custom" to="/custom"  className="component-link">How To Play</Link>
+>>>>>>> 353ab951ddb19d7a45e55ebee463275d97a6945d
             </li>
           </ul>
         </nav>
