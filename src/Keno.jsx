@@ -29,12 +29,10 @@ function Keno() {
   });
   const initialAnswer = answer;
 
-
     for(let i = 0; i < 20; i++){
       let num = `num${i}`;
       array.push(<input onChange={handleSubmit} key={i} name={num} type="number"/>)
     }
-
 
   function handleSubmit(event){
     event.preventDefault();
@@ -81,17 +79,14 @@ function Keno() {
             tempArray.sort((a, b) => a - b);
           }
         }
-        setAnswerArray(tempArray);
+        setAnswerArray([...answerArray, tempArray]);
         tempArray = [];
       }
 
       function renderReset(){
         setAnswerArray([]);
         setAnswer(initialAnswer);
-
     }
-
-
   return (
 
     <div id="keno">
@@ -105,15 +100,30 @@ function Keno() {
       <button type="submit" onClick={renderAnswers}>Click</button>
       </section>
       <div id="kenoRows">
-      <ol>
-        {answerArray.map((each, index) => <li key={index} className="answer-list">{each}</li>)}
-       </ol>
+      <div>
+      {answerArray.map((each, idx) => 
+        <ol  style={styles.list}><p style={styles.number}>{idx + 1}</p>{each.map((num, index) => <li key={index} className="answer-list">{num}</li>)}</ol>
+      )}
+       </div>
        </div>
     </div>
   )
 }
 
+const styles = {
+  list: {
+      marginBottom: '30px',
+  },
+  number: {
+    marginBottom: '10px',
+    fontSize: '2em',
+    width: '90%',
+    margin: 'auto',
+    textDecoration: 'underline',
+    color: 'black',
+  }
 
+}
 
 
 export default Keno;

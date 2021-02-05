@@ -66,7 +66,7 @@ function Hit(){
               tempArray.sort((a, b) => a - b);
             }
           }
-          setAnswerArray(tempArray);
+          setAnswerArray([...answerArray, tempArray]);
           tempArray = [];
         }
 
@@ -90,11 +90,29 @@ function Hit(){
         </section>
         <div id="hitRows">
         <ol>
-          {answerArray.map((each, index) => <li key={index} className="answer-list">{each}</li>)}
+        {answerArray.map((items, idx) => ( <>
+          <p style={styles.number}>{idx + 1}</p>  
+          {items.map((each, index) => <li key={index} className="answer-list" style={styles.list}>{each}</li>)}
+          </>
+          ))}
          </ol>
          </div>
       </div>
     )
+  }
+
+  const styles = {
+    list: {
+        marginBottom: '15px',
+    },
+    number: {
+      marginBottom: '10px',
+      fontSize: '2em',
+      width: '90%',
+      margin: 'auto',
+      textDecoration: 'underline',
+      color: 'black',
+    }
   }
 
   export default Hit;

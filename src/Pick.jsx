@@ -45,7 +45,8 @@ function Pick(){
                 tempArray.push(x);
             }
              }
-        setAnswers(tempArray);
+        setAnswers([...answers, tempArray.map(each => { return each })])
+        console.log(answers);
         tempArray = [];
     }
 
@@ -72,13 +73,29 @@ function Pick(){
             </section>
             <div id="pickRows">
             <ol id="pickOl">
-                {answers.map((each, index) => <li key={index} className="answer-list">{each}</li>)}
+            {answers.map((items, idx) => ( <>
+          <p style={styles.number}>{idx + 1}</p>  
+          {items.map((each, index) => <li key={index} className="answer-list" style={styles.list}>{each}</li>)}
+          </>
+          ))}
             </ol>
             </div>
         </div>
     )
+}
 
-
+const styles = {
+    list: {
+        marginBottom: '10px',
+    },
+    number: {
+      marginBottom: '10px',
+      fontSize: '2em',
+      width: '90%',
+      margin: 'auto',
+      textDecoration: 'underline',
+      color: 'black',
+    }
 }
 
 export default Pick;

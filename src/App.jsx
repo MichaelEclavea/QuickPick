@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route, withRouter} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import React from 'react';
 import Home from './Home';
 import Keno from './Keno';
@@ -7,7 +7,7 @@ import Pick from './Pick';
 import Match from './Match';
 import Hit from './Hit';
 import HowToPlay from './HowToPlay';
-import Compare from './Compare';
+
 import './styles/App.scss';
 
 function App() {
@@ -19,7 +19,6 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/pick3" component={Pick} />
         <Route path="/match4" component={Match} />
-        <Route path="/compare" component={Compare}/>
         <Route path="/hit5" component={Hit} />
         <Route path="/keno" component={Keno} />
         <Route path="/howtoplay" component={HowToPlay} />
