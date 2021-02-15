@@ -53,6 +53,7 @@ function Pick(){
 
     function handleReset(){
        setAnswers([])
+       document.getElementById('pick-form').reset();
     }
 
     for(let i = 0; i < 3; i++){
@@ -64,7 +65,9 @@ function Pick(){
         <div>
         <section  className="all-sections">
             <h2 className="game-title" id="pick3-title">PICK3</h2>
+            <form id="pick-form">
             {array}
+            </form>
             <br></br>
             <div id="pick-button">
             <button onClick={handleReset}>Reset</button>

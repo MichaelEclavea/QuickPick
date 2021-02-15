@@ -73,6 +73,8 @@ function Match(){
         function renderReset(){
           setAnswerArray([]);
           setAnswer(initialAnswer);
+          document.getElementById('match-form').reset();
+          
       }
 
 
@@ -81,7 +83,7 @@ function Match(){
       <div id="match">
         <section className="all-sections">
         <h2 id="match-title">MATCH4</h2>
-        <form name="form" >
+        <form name="form" id="match-form">
         {array}
         </form>
         <br></br>

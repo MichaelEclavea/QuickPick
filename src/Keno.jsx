@@ -86,6 +86,7 @@ function Keno() {
       function renderReset(){
         setAnswerArray([]);
         setAnswer(initialAnswer);
+        document.getElementById('keno-form').reset();
     }
   return (
 

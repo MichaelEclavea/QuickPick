@@ -73,6 +73,7 @@ function Hit(){
         function renderReset(){
           setAnswerArray([]);
           setAnswer(initialAnswer);
+          document.getElementById('hit-form').reset();
       }
 
 
@@ -81,7 +82,7 @@ function Hit(){
       <div id="hit">
         <section className="all-sections">
         <h2 id="hit-title">HIT5</h2>
-        <form name="form" >
+        <form name="form" id="hit-form">
         {array}
         </form>
         <br></br>
