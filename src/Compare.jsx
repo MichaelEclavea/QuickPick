@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './styles/Match.scss';
+import './Match.scss';
 
 
 function Compare(){
