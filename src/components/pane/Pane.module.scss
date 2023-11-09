@@ -19,8 +19,10 @@
   font-weight: 600;
   padding: 16px;
   transition: all 0.1s ease-in-out;
+
   &:hover {
     letter-spacing: 1.5px;
     color: rgb(236, 236, 236);
+    outline: 1px solid whitesmoke;
   }
 }

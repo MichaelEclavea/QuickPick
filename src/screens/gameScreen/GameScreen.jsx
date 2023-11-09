@@ -61,8 +61,9 @@ const GameScreen = ({ selectedGame }) => {
 
   const renderTitleCard = () => (
     <Card
+      className={styles.titleCardRoot}
       content={
-        <Display style={{ color: selectedGame.color, margin: 0 }}>
+        <Display style={{ color: selectedGame.color }}>
           {selectedGame.name}
         </Display>
       }
@@ -125,17 +126,20 @@ const GameScreen = ({ selectedGame }) => {
   );
 
   const renderPrizeCard = () => (
-    <Card
-      style={{
-        backgroundColor: selectedGame.color,
-      }}
-      content={
-        <div className={styles.cardContentRoot}>
-          <Title1>Top Prize</Title1>
-          <LargeTitle>{selectedGame.win}</LargeTitle>
-        </div>
-      }
-    />
+    <div className={styles.prizeCardRoot}>
+      <Card
+        style={{
+          backgroundColor: selectedGame.color,
+          width: 'clamp(0%, 50%, 100%)'
+        }}
+        content={
+          <div className={styles.cardContentRoot}>
+            <Title1>Top Prize</Title1>
+            <LargeTitle>{selectedGame.win}</LargeTitle>
+          </div>
+        }
+      />
+    </div>
   );
 
   const renderResultsCard = () => (
@@ -147,9 +151,11 @@ const GameScreen = ({ selectedGame }) => {
             {!!results.length ? (
               <>
                 <Title3>Generated Numbers</Title3>
-                <Button size="small" onClick={handleClearResults}>
-                  Clear list
-                </Button>
+                <div>
+                  <Button size="small" onClick={handleClearResults}>
+                    Clear list
+                  </Button>
+                </div>
               </>
             ) : (
               <Title3>Results will show here...</Title3>

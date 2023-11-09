@@ -37,6 +37,16 @@
   overflow: hidden;
 }
 
+.titleCardRoot {
+  height: 140px;
+}
+
+.prizeCardRoot {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
 .cardContentRoot {
   display: flex;
   flex-direction: column;

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { gameData } from "../../utils/gameData";
 import styles from "./Pane.module.scss";
+import { tokens } from "@fluentui/react-components";
 
 const Pane = ({ setSelectedGame }) => {
   const [chosenGame, setChosenGame] = useState(null);
@@ -42,6 +43,7 @@ const Pane = ({ setSelectedGame }) => {
                 chosenGame?.name === game.name
                   ? `3px solid ${lightenColor(chosenGame.color, 90)}`
                   : undefined,
+              boxShadow: chosenGame?.name === game.name ? tokens.shadow8 : undefined,
             }}
             className={styles.gameButton}
             role={"button"}
